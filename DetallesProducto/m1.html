@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DETALLE</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://kit.fontawesome.com/c6397fc2d3.js" crossorigin="anonymous"></script>
+<style>
+#container-detalle{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 75%;
+    height: 780px;
+    margin-left: 180px;
+    margin-top: 10px;
+    padding: 4%;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgb(185, 182, 182);
+    
+}
+
+.nombre-portada{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.informacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.portada-img{
+    background-color: white;
+    display: inline-block;
+    max-width: 90%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 gray;
+}
+
+.cont-p{
+    color:gray;
+    font-size: 18px;
+}
+.contenido-p{
+    font-size: 13px;
+    color: black;
+    line-height: 20px;
+}
+
+.precio{
+    background-color: black;
+    color: white;
+    width: 50%;
+    font-size: 14px;
+    margin-top: 5%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.precio p{
+    background-color: rgb(206, 197, 197);
+    color:black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    
+}
+
+.disponibilidad{
+    color: black;
+    font-size: 12px;
+    margin-top: 30px;
+    line-height: 16px;
+}
+
+table tr{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+table {
+    border-spacing: 10px ;
+    width: 80%;
+}
+
+.nombre-car{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .informacion {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:800px) {
+    table tr{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    #container-detalle{
+        display: flex;
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <div id="contenedor">
+                <!-- LOG IN -->
+            <div id="login">
+                <a href="IniciarSesión">Iniciar Sesión</a>
+                <a href="Registrase">Registrase</a>
+            </div>
+                <!-- iconos -->
+            <div class="iconos">
+                <ul>
+                    <li><img src="../iconos/twitter.png" alt="twitter"></li>
+                    <li><img src="../iconos/instagram.png" alt="instagram"></li>
+                    <li><img src="../iconos/facebook.png" alt="facebook"></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+                <!-- MENU -->
+            <div id="menu">
+                <ul>
+                    <li><a href="../empresa.html">EMPRESA</a></li>
+                    <li><a href="../index.html">COMPRAS EN LÍNEA</a></li>
+                    <li><a href="../credito.html">CRÉDITO INMEDIATO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>  
+                    <li><a href="comerciales.html">NUESTROS COMERCIALES</a></li>  
+                </ul>
+
+                <div id="logo">
+                    <img src="../imagenes/logo.jpeg" alt="">
+                </div>
+            </div>
+                <!-- linea de header  -->
+            <div id="recuadro1"></div>
+        </nav>
+    </header>
+
+    <main>
+
+<div id="container-detalle">
+
+    <div class= "nombre-portada">
+        <h2>MOTOS.</h2>
+        <hr style="width:100%; color: black;">  
+    </div>
+
+    <div class="informacion">
+        <div class="portada-img">
+            <img src="../imagenes/s1.jpg" alt=cel  style="max-width:100%;width:auto;height:400px" >
+        </div>
+        <div class="cont-p">
+            <p><b>MOTOCICLETA TUKO CR5-250</b></p>
+
+            <div class="contenido-p">
+                <b>Modelo: </b>CR5-250 <br>
+                Motor de 223 CC <br>
+                Velocidad Máxima  de 115 Km/h <br>
+                Batería 12V 7AH <br>
+                Capacidad del tanque de 12Lt. <br>
+                <b>Marca: </b>TUKO</div>
+            
+            
+
+            <div class="precio">
+                <b>PRECIO:  &nbsp;</b> $ 2,297.58
+                <p>Precio normal: $ 2,300.00</p>
+            </div>
+
+            <div class="disponibilidad">
+                <i>*Precios Incluyen IVA.</i><br>
+                <i>*Precios pueden variar sin previo aviso.</i><br>
+                <b>Disponibilidad: </b> En stock
+            </div>
+        </div>
+    </div>
+    <hr style="width:100%; color: black;"> 
+
+        <div class="nombre-car">
+            <h3>Características</h3>
+        </div>
+        <div class="info">
+            <table class="default">
+
+                <tr>
+                    <td><b>Tipo de Motor:</b> Monocilindrico 4 tiempos / Cadenilla<hr style="width:100%; color: black;"> </td>
+                    
+                    <td><b>Enfriamiento:</b> Aire / Aceite<hr style="width:100%; color: black;"> </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><b>Arranque:</b> Electrico<hr style="width:100%; color: black;"> </td>
+                    <td> <b>Sistema de transmisión:</b> 6 velocidades / Cadena<hr style="width:100%; color: black;"> </td>
+                </tr>
+
+                <tr>
+                    <td><b>Potencia Máxima:</b> 17.7hp / 8500 rpm<hr style="width:100%; color: black;"> </td>
+                    <td><b>Torque Máximo:</b> 6000 rpm<hr style="width:100%; color: black;"> </td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+</main>
+<!-- PIE DE PAGINA -->
+<footer id="piePagina">    
+    <!-- MENU FOOTER  -->
+<div id="menuFooter">
+    <ul>
+        <li><a href="../empresa.html">EMPRESA</a></li>
+        <li><a href="../index.html">Compras en Línea</a></li>
+        <li><a href="../credito.html">Crédito Inmediato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>  
+        <li><a href="comerciales.html">Nuestros Comerciales</a></li> 
+    </ul>
+</div>
+    <!-- ATENCION -->
+<div id="Atencion">
+    <ul>
+        <li>Servicio al Cliente y Servicio <br> Técnico <br> 5004321(A Nivel Nacional)</li>
+        <li>WhatsApp: 0988665432</li>
+        <li>Guayaquil: <br> 04 2187500</li>
+        <li>Quito: 02 3765809</li>
+    </ul>
+</div>
+    <!-- REDES Y LOGO TIPO -->
+<div id="redes">
+    Síguenos en:
+        <ul>
+            <li><a class ="icono"> <i class="fab fa-instagram"></i></a></li>
+            <li><a class ="icono"> <i class="fab fa-facebook-square"></i></a></li>
+            <li><a class ="icono"> <i class="fab fa-twitter"></i></a></li>
+        </ul>
+</div> 
+
+<div id="recuadro"></div>
+</footer>
+</body>
+</html>
