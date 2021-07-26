@@ -1,0 +1,712 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+            /*CONTENEDOR DE ICONO Y LOGIN  */
+
+#contenedor{
+    width: 100%;
+    height: 30px;
+    margin-top: 2px;
+}
+
+            /* ICONOS */
+.iconos{
+    width: 200px;
+    height: 30px;
+    float: right;
+    display: inline;
+}
+
+.iconos  img{
+    width: 30px;
+    left: 40px;
+    padding-left: 10px;
+}
+
+.iconos ul li{
+    list-style: none;
+}
+
+.iconos li {
+    float: right;
+}
+
+            /* LOG IN */
+#login{
+    width: 200px;
+    height: 30px;
+    float: right;
+    display: inline;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login  a{
+    text-decoration: none;
+    top: 5px;
+    color: #212326;
+    padding-left: 10px;
+    position: relative;
+}
+
+            /* MENU */
+#menu{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#logo img{
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+#menu li{
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    left: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #212326;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+
+#menu li:hover{
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gray;
+}
+
+            /* linea en el header "recuadro1" */
+#recuadro1{
+    background-color: #212326;
+    width: 100%;
+    height: 20px;
+}
+
+            /* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+}
+
+main > div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+}
+
+            /* Aside */
+aside{
+    margin: 10px;
+}
+
+            /* ASIDE BUSQUEDA */
+
+#buscar{
+    width: 230px;
+    padding: 20px;
+    background-color: #212326;
+    border-radius: 10px;
+}
+
+#buscar h1{
+    font: bold 18px Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#buscar input{
+    width: 180px;
+    height: 30px;
+}
+
+#buscar img{
+    width: 30px;
+    left: 40px;
+    padding-left: 12px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+            /*ASIDE CATEGORIA  */
+#categoria {
+    width: 230px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #212326;
+    border-radius: 10px;
+}
+
+
+#categoria #recuadro2{
+    width: 230px;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#categoria h1{
+    font: bold 18px Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#categoria  ul, li{
+    list-style: none;
+}
+
+#categoria ul{
+    margin-left: 10px;
+}
+
+#categoria a{
+    text-decoration: none;
+    color: white;
+}
+
+#categoria li:hover{
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gray
+}
+
+                    /* section y article */
+#articulosprincipales{
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 9px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#articulosprincipales #compra{
+    position: relative;
+}
+
+#compra h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+
+#compra img{
+    width: 180px;
+    height: 50px;
+    top: -5px;
+    right: 10px;
+}
+
+#compra #recuadro3{
+    width: 100%;
+    height: 3px;
+    background-color: #212326;
+    margin-top: 20px;
+}
+                /* ARTICLE PRODUCTOS */
+#productos{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#slider{
+    position: relative;
+    width: 100%;
+}
+
+#slider .recuadro{
+    display: inline-block;
+}
+
+.recuadro{
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 470px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gray
+}
+
+.recuadro:hover{
+    border: 2px solid black;
+}
+
+.recuadro img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 30px;
+}
+
+.infoProducto{
+    width: 300px;
+    height: 100px;
+    color: black;
+    position: relative;
+    top: 260px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.infoProducto .precio{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    left: 80px;
+    padding-top:3px ;
+}
+
+.precio > span{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.recuadrodetalle{
+    background-color: #cbd3dd;
+    width: 200px;
+    height: 30px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.recuadrodetalle a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: absolute;
+    right: 45px;
+    top: 5px;
+}
+
+.recuadro .recuadrodetalle{
+    position: absolute;
+    top: 410px;
+    left: 55px;
+}
+
+.recuadro .agregarCarrito{
+    position: absolute;
+    top: 440px;
+    left: 55px;
+} 
+
+                    /* Menu slider */
+#menuSlide{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    margin-bottom:-17px; 
+}
+
+#menuSlide  a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #212326;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+                    
+/* PIE DE PAGINA */
+#piePagina{
+    background:#212326;
+    width: 100%;
+    height: 320px;
+    font-size: 13px;
+    position: relative;
+}
+
+#piePagina  li{
+    font-size: 15px;
+    color: #F2F2F2;
+    list-style: none;
+    line-height: 30px;
+}
+
+#piePagina > #menuFooter, #Atencion, #redes{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 280px;
+    height: 300px;
+} 
+
+#menuFooter{
+    position: absolute;
+    left: 100px;
+}
+
+#menuFooter ul{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+#menuFooter a { 
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+#Atencion {
+    position: absolute;
+    left: 410px;
+}
+
+#Atencion ul{
+    margin-left: 40px;  
+    margin-top: 50px; 
+}
+
+#redes{
+    margin-top: 60px;
+    position: absolute;
+    left: 800px;
+    color: white;
+}
+
+#redes ul{
+    color: white;
+    margin-top: 25px;
+}
+
+#redes li {
+    vertical-align: top;
+    display: inline;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+#piePagina #recuadro{
+    width: 100%;
+    height: 5px;
+    background-color:white;
+    position: absolute;
+    bottom: 10px;
+}
+
+                    /* BRENDA  */
+
+#container{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    max-width: 80%;
+    height: 1500px;
+    margin-left: 180px;
+    margin-top: 50px;
+    padding-right: 10px;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gray;
+}
+
+.fondo-credito{
+    
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-color:white;
+}
+
+table td{
+    width: 50%;
+    padding: 25px;
+}
+
+table tr{
+    top: 50px;
+    background-color:white;
+    text-align: left;
+    position: relative;
+    margin-top: 5px;
+    align-items: flex-start;
+}
+
+.name-titulo{
+    display: inline-block;
+    color: white;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px 20px 0px 20px;
+    background-color: black;
+    width: 200px ;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 16px;
+}  
+
+.detalle{
+    color:rgb(36, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    background-color:white;
+    top: 20px;
+    
+}
+
+.name-form{
+    display: inline-block;
+    color: white;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px 20px 0px 20px;
+    background-color: black;
+    width: 200px ;
+    height: 30px;
+    margin-top: 80px;
+    font-size: 16px;
+    margin-left: 25px;
+}  
+
+.formularios{
+    
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.formulario-grupo-input{
+    position: relative;
+}
+
+.formulario-input{
+    width: 90%;
+    border: 1px solid gray;
+    border-radius:  5px 5px 5px 5px; 
+    height: 35px;
+    line-height: 35px;
+    padding: 0 40px 0 10px;
+    transition:  .3s ease all;
+}
+
+.formulario-input:focus  {
+    border: 2px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario-checkbox{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.formulario-btn{
+    background-color: rgb(37, 36, 36);
+    color: white;
+    right: 50px;
+    margin-top: 60px;
+    border-radius: 10px 10px 10px 10px;
+    width: 40%;
+    height: 30px;
+    margin-left: 40%;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    transition: .1s ease all;
+}
+
+.formulario-btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163,163, 1);
+}
+
+
+/*Suares Melany*/
+/* ESTILOS PARA PAGINA EMPRESA*/ 
+
+.container-empresa{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    max-width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gray;
+
+}
+
+.cont-empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin-top: 15px;
+    height: 300px;
+
+} 
+
+.cont-empresa p{
+    margin-top: 25px;
+    padding: 20px;
+    line-height: 30px;
+    background-color: whitesmoke;
+    margin-left: 20px;
+}
+
+.imagenelectro{
+    
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 750px;
+    align-items: right;
+   
+
+}
+
+#empresa {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #212326;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+#empresa h1{
+    font: bold 18px Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+#empresa #recuadro2{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#empresa h1{
+    font: bold 18px Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#empresa ul{
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+#empresa a{
+    text-decoration: none;
+    color: white;
+}
+
+#empresa li:hover{
+    border-radius:  5px 5px 5px 5px; 
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px 0 white;
+    
+}
+
+#slide5 , #slide6, #slide7, #slide8{
+    width: 100%;
+}
+
+/*.slid{
+    width: 100%;
+    height: 300px;
+    position:absolute;
+}*/
+
+.cuadro-textop{
+    
+    margin-top: 20%;
+    padding: 15px;
+    line-height: 25px;
+}
+
+
+.cuadro-texto2{
+    
+    padding: 30px;
+}
+
+
+
+.logosMarcas img{
+    margin-left: 15%;
+    margin-top: 4%;
+    height: 100px;
+   
+    display: inline-flexbox;
+    overflow: hidden;
+    
+}
+
+.textoHistoria {
+    color: black;
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+    line-height: 30px;
+  
+    
+}
+
+.textoFilosofia {
+    color: black;
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+    line-height: 30px;
+}
+
+.textomision{
+    color: black;
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+    line-height: 30px;
+}
+
+.textomuchomas{
+    color: black;
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+    line-height: 30px;
+}
+
+.nuestrasmarcas{
+    display: inline-flexbox;
+    border-color: black;
+   
+    
+}

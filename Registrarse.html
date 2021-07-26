@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="cre.css">
+        <!--PARA ENLAZAR EL DOCUMENTO JS EXTERNO-->
+        <script src="js/validar-form.js"> </script>
+    </head>
+
+    <body>
+        <!-- Codigo javascript para la validacion de provincia y ciudad 
+ -->
+        <script>
+    
+    /*variables para las cuidades*/
+                        
+                var cuidad_1=new Array("CUENCA","GIRÓN","GUALACEO","PAUTE","SAN FERNANDO");
+                var cuidad_2=new Array("CALUMA","CHILLANES","ECHEANDÍA","GUARANDA","SAN MIGUEL");
+                var cuidad_3=new Array("BIBLIÁN","CAÑAR","LA TRONCAL");
+                var cuidad_4=new Array("TULCÁN");
+                var cuidad_5=new Array("LA MANÁ","LATACUNGA","PUJILÍ","SALCEDO");
+                var cuidad_6=new Array("ALAUSÍ","CUMANDÁ","PARROQUIA SEVILLA SECTOR DALIN","RIOBAMBA");
+                var cuidad_7=new Array("ATACAMES","ESMERALDAS","QUININDÉ","SAN LORENZO","TONSUPA");
+                var cuidad_8=new Array("PUERTO AYORA","PUERTO BAUERIZO MORENO","PUERTO VILLAMIL");
+                var cuidad_9=new Array("BALAO","BALZAR","COLIMES","DAULE","DURÁN","EL EMPALME");
+                var cuidad_10=new Array("ATUNTAQUI","COTACACHI","IBARRA ","OTAVALO");
+                var cuidad_11=new Array("BABA ","BABAHOYO ","BUENA FÉ","MOCACHE","MONTALVO ","PALENQUE","QUEVEDO","VALENCIA","VENTANAS","VINCES");
+                var cuidad_12=new Array("Bahía de caraquez","CALCETA","CHONE","EL CARMEN","FLAVIO ALFARO","JIPIJAPA","MANTA","MONTECRISTI","PEDERNALES","PICHINCHA","PORTOVIEJO","SAN VICENTE");
+                var cuidad_13=new Array("ARCHIDONA","EL CHACO","TENA");
+                var cuidad_14=new Array("LA JOYA DE LOS SACHAS");
+                var cuidad_15=new Array("ARENILLAS","EL GUABO","HUAQUILLAS","MACHALA","PASAJE","PIÑAS","SANTA ROSA","ZARUMA");
+                var cuidad_16=new Array("PASTAZA");
+                var cuidad_17=new Array("Baños de Agua Santa","CAYAMBE","MACHACHI","MEJÍA","PEDRO MONCAYO","PEDRO VICENTE MALDONADO","QUITO","RUMIÑAHUI","SAN ANTONIO DE PICHINCHA","SAN MIGUEL DE LOS BANCOS","TAMBILLO");
+                var cuidad_18=new Array("LA LIBERTAD","PARROQUIA CHANDUY","SALINAS","SANTA ELENA");
+                var cuidad_19=new Array("LA CONCORDIA","SANTO DOMINGO");
+                var cuidad_20=new Array("CASCALES","LAGO AGRIO","SHUSHUFINDI");
+                var cuidad_21=new Array("AMBATO","BAÑOS DE AGUA SANTA","SAN PEDRO DE PELILEO");
+                var todasCuidad = [
+                    [],
+                    cuidad_1,
+                    cuidad_2,
+                    cuidad_3,
+                    cuidad_4,
+                    cuidad_5,
+                    cuidad_6,
+                    cuidad_7,
+                    cuidad_8,
+                    cuidad_9,
+                    cuidad_10,
+                    cuidad_11,
+                    cuidad_12,
+                    cuidad_13,
+                    cuidad_14,
+                    cuidad_15,
+                    cuidad_16,
+                    cuidad_17,
+                    cuidad_18,
+                    cuidad_19,
+                    cuidad_20,
+                    cuidad_21,
+                ];
+
+  /*funcion Validar el cambio de los selectores*/
+
+  function cambia_provincia(){ 
+    var provincia;
+    provincia = document.f1.provincia[document.f1.provincia.selectedIndex].value 
+    if (provincia != 0) { 
+        mis_Ciudad=todasCuidad[provincia];
+        num_Ciudad = mis_Ciudad.length;
+        document.f1.ciudad.length = num_Ciudad;
+        for(i=0;i<num_Ciudad;i++){ 
+            document.f1.ciudad.options[i].value=mis_Ciudad[i] ;
+            document.f1.ciudad.options[i].text=mis_Ciudad[i] ;
+        }   
+    }else{  
+        document.f1.ciudad.length = 1 
+        document.f1.ciudad.options[0].value = "-" ;
+        document.f1.ciudad.options[0].text = "-" ;
+    } 
+    document.f1.ciudad.options[0].selected = true;
+}
+</script>
+
+        <!-- inicio sesión / registro-->
+        <header>
+            <div id="contenedor">
+                <!-- LOG IN -->
+                <div id="login">
+                    <a href="iniciarSesión">Iniciar Sesión</a>
+                    <a href="Registrarse.html">Registrase</a>
+                </div>
+                <!-- iconos -->
+                <div class="iconos">
+                    <ul>
+                        <li><img src="iconos/twitter.png" alt="twitter"></li>
+                        <li><img src="iconos/instagram.png" alt="instagram"></li>
+                        <li><img src="iconos/facebook.png" alt="facebook"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav>
+                <!-- MENU DE NAVEGACION-->
+                <div id="menu">
+                    <ul>
+                        <li><a href="empresa.html">EMPRESA</a></li>
+                        <li><a href="index.html">COMPRAS EN LÍNEA</a></li>
+                        <li><a href="credito.html">CRÉDITO INMEDIATO</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="comerciales.html">NUESTROS COMERCIALES</a></li>
+                    </ul>
+
+                    <div id="logo">
+                        <img src="imagenes/logo.jpeg" alt="">
+                    </div>
+                </div>
+                <!-- Header  -->
+                <div id="recuadro1"></div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!--  Fomulario -->
+            <div id="container">
+                <div id="contenedorForm">
+                    <div class="registro">
+                        &nbsp;
+                        &nbsp;
+                        <h2 style="font-size: 30px; margin: 10px;"> &nbsp;
+                            Registrarse
+                        </h2>
+                    </div>
+                </div>
+                <div class="formularios">
+                    <form class="formulario" name=f1 id="formulario"
+                        onsubmit="return validarFormulario()">
+                        <div class="form-row">
+                            <div class="form-group col-md-5"
+                                id="grupo--nombres">
+                                <label class="label col-md-2"
+                                    style="font-weight:
+                                    bold;">Nombres
+                                </label>
+                                <input type="text" class="form-control"
+                                    placeholder="Nombres"
+                                    id="nombres"
+                                    name="nombres" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="label col-md-2" style="font-weight:
+                                bold;">Apellidos</label>
+                            <input type="text" class="form-control"
+                                placeholder="Apellidos"
+                                id="apellidos"
+                                name="apellidos" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="label" style="font-weight: bold;">Tipo
+                                Identificación</label>
+                            <select class="form-control"
+                                style="background: white;
+                                width: 73%;"
+                                id="estado"
+                                name="estado">
+                                <option value="0">-- Elija Uno --</option>
+                                <option value="1">Cédula</option>
+                                <option value="2">RUC</option>
+                                <option value="3">Pasaporte</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label class="label" style="font-weight: bold;">C.I.</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Cédula"
+                                    id="cedula"
+                                    name="cedula" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="label" style="font-weight: bold;">Provincia</label>
+                                <select class="form-control"
+                                    onchange="cambia_provincia()"
+                                    style="background: white;
+                                    width: 73%;"
+                                    id="provincia"
+
+                                    name="provincia">
+                                    <option value="0" selected>--Elija Una--</option>
+                                    <option value="1">AZUAY</option>
+                                    <option value="2">BOLÍVAR</option>
+                                    <option value="3">CAÑAR</option>
+                                    <option value="4">CARCHI</option>
+                                    <option value="5">COTOPAXI</option>
+                                    <option value="6">CHIMBORAZO</option>
+                                    <option value="7">ESMERALDAS</option>
+                                    <option value="8">GALÁPAGOS</option>
+                                    <option value="9">GUAYAS</option>
+                                    <option value="10">IMBABURA </option>
+                                    <option value="11">LOS RIOS </option>
+                                    <option value="12">MANABI</option>
+                                    <option value="13">NAPO</option>
+                                    <option value="14">ORELLANA</option>
+                                    <option value="15">ORO</option>
+                                    <option value="16">PASTAZA</option>
+                                    <option value="17">PICHINCHA </option>
+                                    <option value="18">SANTA ELENA</option>
+                                    <option value="19">SANTO DOMINGO</option>
+                                    <option value="20">SUCUMBIOS </option>
+                                    <option value="21">TUNGURAHUA </option>
+                                </select>
+
+                                <div class="form-group col-md-4">
+                                    <label class="label" style="font-weight:
+                                        bold;">Ciudad
+                                    </label>
+                                    <select class="form-control"
+                                        style="background: white;
+                                        width: 73%;"
+                                        id="ciudad"
+                                        name="ciudad">
+                                        <option value="1">--Elija Una--</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label class="label" style="font-weight: bold;">Email</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Email"
+                                    id="Email"
+                                    name="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="label" style="font-weight: bold;">Contraseña</label>
+                            <input type="password" class="form-control"
+                                placeholder="Contraseña"
+                                id="password"
+                                name="password" />
+                        </div>
+                        <div class="form-row" style="text-align: center;">
+                            <button type="submit" class="btn btn-registro
+                                btn-primary formulario__btn">REGISTRASE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- PIE DE PAGINA -->
+        <footer id="piePagina">
+            <!-- MENU FOOTER  -->
+            <div id="menuFooter">
+                <ul>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="index.html">Compras en Línea</a></li>
+                    <li><a href="credito.html">Crédito Inmediato</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="comerciales.html">Nuestros Comerciales</a></li>
+                </ul>
+            </div>
+            <!-- ATENCION -->
+            <div id="Atencion">
+                <ul>
+                    <li>Servicio al Cliente y Servicio <br> Técnico <br>
+                        5004321(A Nivel Nacional)</li>
+                    <li>WhatsApp: 0988665432</li>
+                    <li>Guayaquil: <br> 04 2187500</li>
+                    <li>Quito: 02 3765809</li>
+                </ul>
+            </div>
+            <!-- REDES Y LOGO TIPO -->
+            <div id="redes">
+                Síguenos en:
+                <ul>
+                    <li><a class="icono"> <i class="fab fa-instagram"></i></a></li>
+                    <li><a class="icono"> <i class="fab
+                                fa-facebook-square"></i></a></li>
+                    <li><a class="icono"> <i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div id="recuadro"></div>
+        </footer>
+    </body>
+
+
+</html>

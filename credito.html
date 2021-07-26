@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Credito inmediato</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="validar.js" ></script>
+    <script src="https://kit.fontawesome.com/c6397fc2d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="contenedor">
+            <!-- LOG IN -->
+        <div id="login">
+            <a href="iniciarSesión">Iniciar Sesión</a>
+            <a href="Registrarse.html">Registrase</a>
+        </div>
+            <!-- iconos -->
+        <div class="iconos">
+            <ul>
+                <li><img src="iconos/twitter.png" alt="twitter"></li>
+                <li><img src="iconos/instagram.png" alt="instagram"></li>
+                <li><img src="iconos/facebook.png" alt="facebook"></li>
+            </ul>
+        </div>
+    </div>
+
+        <nav>
+                <!-- MENU -->
+            <div id="menu">
+                <ul>
+                    <li><a href="empresa.html">EMPRESA</a></li>
+                    <li><a href="index.html">COMPRAS EN LÍNEA</a></li>
+                    <li><a href="credito.html">CRÉDITO INMEDIATO</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>  
+                    <li><a href="comerciales.html">NUESTROS COMERCIALES</a></li>  
+                </ul>
+
+                <div id="logo">
+                    <img src="imagenes/logo.jpeg" alt="">
+                </div>
+            </div>
+                <!-- linea de header  -->
+            <div id="recuadro1"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div id= "container">
+            <figure class="fondo-credito">
+                <img src="imagenes/fondoF.PNG" alt=credi  style="max-width:100%;width:auto;height:600px" >
+                
+            </figure>
+    
+    
+        <table class="default">
+    
+            <tr>
+              <td>
+                <div class="name-titulo">
+                <b> &nbsp; Beneficios</b> </div>
+                <hr style=" width:100%; color: black;">    
+                <div class="detalle">
+                    <ul>
+                        <li>Contar con crédito pre-aprobado para sus compras.</li>
+                        <li>Comprar sin más solicitudes, trámites, ni papeles.</li>
+                        <li>Usar tu credencial como dinero en efectivo.</li>
+                        <li>Identificarse en cualquiera de nuestros almacenes y llevarse, sin entrada y sin garante, los artículos que desee.</li>
+                        <li>Escoger su forma de pago: semanal, quincenal o mensualmente, hasta 24 meses plazo.</li>
+                        <li>Atención 24/7 para solicitudes vía web.</li>
+                        <li>Usted decide el día del mes que quiere abonar.</li>
+    
+                    </ul>
+                </div></td>
+          
+              <td > 
+                  <br>
+                  
+                <div class="name-titulo">
+                    
+                    <b> &nbsp; Requisitos</b> </div>
+                    <hr style=" width:100%; color: black;">             
+                    <div class="detalle">
+                        <ul>
+                            <li>Original y copia de cédula de identidad.</li>
+                            <li>Planilla de servicios básicos.</li>
+                            <li>Para obtener aumento de cupo, presentar soporte de ingresos: giros,<br> facturas o rol de pagos.</li>
+                        </ul>
+                        &nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; Para mayor información puede llamar sin costo a la línea <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue"> <b>1-800 ELECTROBLACK (524464)</b><br></span>
+                        <br>
+                        &nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; También contamos con números locales para las siguientes ciudades: <br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <b>Guayaquil:</b> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <b>Quito:</b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  04500-8500 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 02500-8500<br>
+                        
+                    </div></td>
+              
+            </tr>
+            </table>
+    
+    
+            <div id="contenedorForm">
+            <div class="name-form">
+                    &nbsp;
+                    &nbsp;
+                    <b> &nbsp; Aplicar en línea</b> </div>
+                    <hr style=" width:96%; color: blue;"> 
+           
+    
+            <div class="formularios">
+                <form id="formulario" class="formulario"  onsubmit="return validar();">
+                
+                    <!--NOMBRE-->
+                    <div class="formulario-grupo " id="grupo-nombre">
+                        <label  class="formulario-label">Nombre*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="nombre" id="nombre" >
+                        </div>
+                    </div>
+    
+                    <!--APELLIDO-->
+                    <div class="formulario-grupo" id="grupo-apellido">
+                        <label  class="formulario-label">Apellido*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="apellido" id="apellido" >
+                        </div>
+                    </div>
+    
+                    <!--EMAIL-->
+                    <div class="formulario-grupo " id="grupo-email">
+                        <label class="formulario-label">Email*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="email" id="email" >
+                        </div>
+                    </div>
+    
+                    
+                    <!--CEDULA-->
+                    <div class="formulario-grupo " id="grupo-cedula">
+                        <label class="formulario-label">Cédula*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="cedula" id="cedula">
+                        </div>
+                    </div>
+    
+                    <!--ESTADO CIVIL-->
+                    <div class="formulario-grupo" id="grupo-estado">
+                        <label  class="formulario-label">Estado Civil*</label><br>
+                            <select class="formulario-input" id="estado" name="estado">
+                                <option value="0">Seleccione</option>
+                                <option value="1">Soltero</option>
+                                <option value="2">casado</option>
+                                <option value="3">Viudo</option>
+                                <option value="4">Divorciado</option>
+                            </select> 
+                    </div>
+    
+                    <!--FECHA NACIMIENTO-->
+                    <div class="formulario-grupo" id="grupo-nacimiento">
+                        <label  class="formulario-label">Fecha de Nacimiento*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="date" class="formulario-input" name="fecha" id="fecha">
+                        </div>
+                    </div>
+    
+    
+                    <!--DIRECCION-->
+                    <div class="formulario-grupo " id="grupo-direccion">
+                        <label class="formulario-label">Dirección*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="direccion" id="direccion">
+                        </div>
+                    </div>
+    
+                    <!--CELULAR-->
+                    <div class="formulario-grupo" id="grupo-celular">
+                        <label class="formulario-label">Celular*</label>
+                        <div class="formulario-grupo-input">
+                            <input type="text" class="formulario-input" name="celular" id="celular">
+                        </div>
+                    </div>
+    
+                    <!--PROVINCIA-->
+                    <div class="formulario-grupo" id="grupo-provincia">
+                        <label  class="formulario-label">Provincia*</label><br>
+                        
+                            <select class="formulario-input" name="provincia" id="provincia">
+                                <option value="0">Seleccione una provincia</option>
+                                <option value="1">Esmeralda</option>
+                                <option value="2">Manabí</option>
+                                <option value="3">Los Ríos</option>
+                                <option value="4">Santa Elena</option>
+                                <option value="5">Guayas</option>
+                                <option value="6">Santo Domingo</option>
+                                <option value="7">El Oro</option>
+                                <option value="8">Azuay</option>
+                                <option value="9">Bolívar</option>
+                                <option value="10">Cañar</option>
+                                <option value="11">Carchi</option>
+                                <option value="12">Cotapaxi</option>
+                                <option value="13">Chimborazo</option>
+                                <option value="14">Imbabura</option>
+                                <option value="15">Loja</option>
+                                <option value="16">Pichincha</option>
+                                <option value="17">Tungurahua</option>
+                                <option value="18">Morona Santiago</option>
+                                <option value="19">Napo</option>
+                                <option value="20">Orellana</option>
+                                <option value="21">Pastaza</option>
+                                <option value="22">Sucumbíos</option>
+                                <option value="23">Zamora Chinchipe</option>
+                            </select>    
+                    </div>   
+    
+                    <!--TERMINOS-->
+                    <div class="formulario-grupo" id="grupo-terminos">
+                        <label class="formulario-label">
+                            <input type="checkbox" class="formulario-checkbox" name="terminos" id="terminos">
+                            Acepto los Términos y Condiciones</label>
+                    </div>
+                    
+    
+                    <!--ENVIAR-->
+                    <div class="formulario-grupo formulario-enviar">
+                        <input type="submit" class="formulario-btn" id="formulario-btn"   value=Enviar>
+                    </div> 
+    
+    
+    
+    
+                    
+                </form>
+    
+    
+            </div>
+    
+        </div>
+    
+        </div>
+    
+    
+    
+    
+            
+    </main>
+
+<!-- PIE DE PAGINA -->
+<footer id="piePagina">    
+    <!-- MENU FOOTER  -->
+<div id="menuFooter">
+    <ul>
+        <li><a href="empresa.html">Empresa</a></li>
+        <li><a href="index.html">Compras en Línea</a></li>
+        <li><a href="credito.html">Crédito Inmediato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>  
+        <li><a href="comerciales.html">Nuestros Comerciales</a></li> 
+    </ul>
+</div>
+    <!-- ATENCION -->
+<div id="Atencion">
+    <ul>
+        <li>Servicio al Cliente y Servicio <br> Técnico <br> 5004321(A Nivel Nacional)</li>
+        <li>WhatsApp: 0988665432</li>
+        <li>Guayaquil: <br> 04 2187500</li>
+        <li>Quito: 02 3765809</li>
+    </ul>
+</div>
+    <!-- REDES Y LOGO TIPO -->
+    <div id="redes">
+        Síguenos en:
+            <ul>
+                <li><a class ="icono"> <i class="fab fa-instagram"></i></a></li>
+                <li><a class ="icono"> <i class="fab fa-facebook-square"></i></a></li>
+                <li><a class ="icono"> <i class="fab fa-twitter"></i></a></li>
+            </ul>
+    </div> 
+
+<div id="recuadro"></div>
+</footer>
+</body>
+</html>
